@@ -1,0 +1,211 @@
+:root{
+    --bg-color: #4D148C;
+    --txt-color:white;
+    --sec-bg-color:rgb(87, 87, 87);
+    --high-light:#FF6600;
+    --main-font:  'Plus Jakarta Sans',Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: calc(100vh - 120px);
+    background-color: var(--sec-bg-color);
+    color: var(--txt-color);
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+    position: fixed;   
+    top: 0px;
+    justify-content: space-between;
+    
+}
+
+header h1{
+    font-family: var(--main-font);
+    padding: 26px 0;
+    font-size: 20px ;
+    margin-left: 80px;
+    
+}
+
+header h1 span{
+    color: var(--high-light);
+    font-size: 28px;
+    margin-left: -10px;
+    
+}
+
+nav{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--txt-color);
+    transition: ease-in-out 0.2s;
+}
+
+.nav-link:hover{
+    color: var(--high-light);
+    font-size: 1.1em;
+       
+}
+
+.hero{
+    margin-top: 80px;
+    height:450px;
+    background-image: url(hero.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+#h2-hero{
+    color: var(--txt-color);
+    display: flex;
+    width: 40%;
+    height: 100%;
+    font-size: 3.8rem;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 55%;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#h2-hero span:last-of-type::before{
+    content: "&";
+    font-size: 2.5rem;
+    color: var(--txt-color);  
+}
+
+#h2-hero span:last-of-type{
+    color: var(--high-light);
+}
+
+#Destinations{
+    background-color: rgb(58, 66, 66);
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+    padding: 40px;
+}
+
+.sec-title{
+    
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+.dest-container{
+    width: 100%;
+    background-color: var(--sec-bg-color);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.dest-tile{
+    width: 33.333%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: ease-in-out 0.4s;
+    color: var(--txt-color);
+    padding: 20px;
+    background-color: var(--sec-bg-color);
+    
+}
+
+.dest-tile h4{
+    margin: 16px 0 ;
+    font-size: 1.4rem;
+}
+
+
+
+.Paris{
+    background-image: url(1.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.New-york{
+    background-image: url(2.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.Tokyo{
+    background-image: url(3.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.dest-tile:hover{
+    width: 90%;
+}
+
+#about{
+    padding: 50px;   
+    background-color: var(--sec-bg-color);
+}
+
+.about-container{
+    
+    padding: 0 40px;
+    width: 100%;
+    height: 60vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.about-container div{
+    margin: auto;
+    margin-left: 40px;   
+}
+
+.about-container div h4{
+    margin-bottom: 8px ;
+    font-size: 20px;
+}
+
+.about-container div h5{
+    margin-bottom: 32px;
+    opacity: 0.8;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#logo{
+    width: 240px;
+    height: 240px;
+    margin: auto;
+}
