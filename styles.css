@@ -78,7 +78,7 @@ nav ul{
 .hero{
     margin-top: 80px;
     height:450px;
-    background-image: url(hero.jpg);
+    background-image: url(img/hero.jpg);
     background-position: top;
     background-size: cover;
 }
@@ -150,19 +150,19 @@ nav ul{
 
 
 .Paris{
-    background-image: url(1.jpg);
+    background-image: url(img/1.jpg);
     background-position: top;
     background-size: cover;
 }
 
 .New-york{
-    background-image: url(2.jpg);
+    background-image: url(img/2.jpg);
     background-position: top;
     background-size: cover;
 }
 
 .Tokyo{
-    background-image: url(3.jpg);
+    background-image: url(img/3.jpg);
     background-position: top;
     background-size: cover;
 }
