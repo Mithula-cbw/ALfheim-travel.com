@@ -640,7 +640,7 @@ button[type="submit"]:hover {
     height: max-content;
     background-color: var(--bg-color);
     color: var(--bg-color);
-    padding: 40px;
+    padding: 20px;
     color: var(--text-color);
     padding-top: 100px;  
     padding-bottom: 40px;
@@ -672,7 +672,7 @@ button[type="submit"]:hover {
 .about-1{
     
     order: 2;
-    padding: 40px 0px 60px 0;
+    padding: 40px 12px 60px 12px;
     font-size: 0.9rem;
 }
 
@@ -682,7 +682,7 @@ button[type="submit"]:hover {
     background-position: top; 
     background-size: cover;
     background-repeat: no-repeat;  
-    height: 340px;
+    height: 300px;
    
      
 }
@@ -853,7 +853,7 @@ button[type="submit"]:hover {
 #Destinations{
     background-color: var(--bg-color);
     color: var(--bg-color);
-    padding: 40px;
+    padding: 20px;
     margin-top: 20px;
     padding-top: 100px;
     padding-bottom: 40px;
@@ -878,8 +878,8 @@ button[type="submit"]:hover {
 
 
 .feedback-form-container {
-    max-width: 80%;
-    padding: 30px;
+    max-width: 100%;
+    padding: 20px;
     
 }
 
@@ -935,7 +935,7 @@ button[type="submit"]:hover {
 }
 
 .con-container{
-    max-width: 80%;
+    max-width: 90%;
     padding: 10px;
     margin-bottom: 100px;
     margin-top: 60px;
