@@ -545,6 +545,14 @@ button[type="submit"]:hover {
     padding-top: 40px;
 }
 
+.footer-nav li{
+    margin-bottom: 1rem;
+}
+
+.footer-section p{
+    margin-bottom: 1.2rem;
+}
+
 .footer-container {
     display: flex;
     flex-direction: row;
@@ -878,6 +886,9 @@ button[type="submit"]:hover {
     box-shadow: 8px 0  12px rgba(0, 0, 0, 0.305);
 }
 
+.dest-tile:hover .fa-external-link{
+    color: rgba(255, 255, 255, 0.918);
+}
 
 .feedback-form-container {
     max-width: 100%;
