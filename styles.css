@@ -226,7 +226,7 @@ header{
 }
 
 .welcome{
-    max-height: 300px;
+    max-height: max-content;
     width: 100%;
     padding: 60px 10px 40px 10px;
     background-color: var(--bg-color);
@@ -242,7 +242,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 160px;
 }
 
 .welcome-1{
@@ -285,6 +285,7 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    margin-bottom: 80px;
 }
 
 .dest-tile{
@@ -375,6 +376,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     padding-left: 50px;
+    margin-bottom: 100px;
 }
 
 .about-part{
@@ -913,10 +915,7 @@ button[type="submit"]:hover {
     
 }
 
-.form-group label:last-of-type::before{
-   
-    display: none;
-}
+
 
 .form-group input, .form-group textarea {
    padding-left: 5px;
