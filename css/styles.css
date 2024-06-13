@@ -189,7 +189,7 @@ header{
 .hero{
     width: 100%;
     height:360px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2)), url('/img/banner.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2)), url('../img/banner.webp');
     background-size: cover;
     background-position: center; 
     margin-top: 100px;
@@ -316,19 +316,19 @@ header{
 
 
 .Paris{
-    background-image:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.8) 90%), url(/img/Paris.webp);
+    background-image:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.8) 90%), url(../img/Paris.webp);
     background-position: top;
     background-size: cover;
 }
 
 .New-york{
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%),url(/img/NY.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%),url(../img/NY.webp);
     background-position: top;
     background-size: cover;
 }
 
 .Tokyo{
-    background-image:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.9) 90%), url(/img/Tokyo.webp);
+    background-image:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.9) 90%), url(../img/Tokyo.webp);
     background-position: top;
     background-size: cover;
 }
@@ -389,7 +389,7 @@ header{
 }
 
 .about-2 {
-    background-image: url(/img/about.webp);
+    background-image: url(../img/about.webp);
     background-position: center; 
     background-size: cover;
      background-repeat: no-repeat;  
