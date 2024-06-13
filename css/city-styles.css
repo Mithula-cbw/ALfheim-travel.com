@@ -99,6 +99,11 @@
   height: 100%;
 }
 
+.city-gllr{
+  width: 60%;
+  height: auto; 
+}
+
 .gllr-title{
  
   color: var(--bg-color);
@@ -108,10 +113,7 @@
   letter-spacing: 5px;
 }
 
-.city-gllr{
-  width: 60%;
-  height: auto; 
-}
+
 
 .grid-container {
   padding: 20px;
@@ -126,8 +128,8 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  
   border-radius: 20px;
+  
 }
 
 .city-gllr a{
@@ -154,7 +156,7 @@
   height: 100%;
   padding: 20px;
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 4px;
   overflow: auto; 
 }
@@ -194,7 +196,37 @@
 }
 
 
+@media (max-width:1100px){
 
+  .city-info{
+    max-width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    padding: 60px 40px;
+  }
+}
+
+  @media (max-width:1000px){
+
+    #city{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 100px 60px;
+    }
+
+    .city{
+      width: 90%;
+      height: 100%;
+      margin-bottom: 20px;
+      
+    }
+    
+    .city-gllr{
+      width: 90%;
+      height: auto; 
+    }
+
+}
 
   @media (max-width:900px){
     .hero h1{
@@ -215,4 +247,67 @@
       font-size: 0.7rem;
       letter-spacing: 4px;
     }
+
+    .city{
+      width: 100%;
+      height: 100%;
+      margin-bottom: 20px;
+      
+    }
+    
+    .city-gllr{
+      width: 100%;
+      height: auto; 
+    }
+
+    .grid-container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3,1fr);
+      gap: 10px;
+      
+    }
+
+    .grid-container img{
+      box-shadow: 2px 2px 8px rgba(71, 71, 71, 0.075),-2px 2px 8px  rgba(71, 71, 71, 0.075);
+    }
+    .grid-container a{
+      box-shadow: 2px 2px 8px rgba(71, 71, 71, 0.205),-2px 2px 8px rgba(71, 71, 71, 0.205);
+    }
+    
   }
+
+  @media (max-width:680px){
+    .city-info{
+      max-width: 100%;
+      grid-template-columns: repeat(1,1fr);
+      gap: 20px;
+    }
+
+    .city-info{
+      padding: 60px 40px;
+      
+    }
+
+    #city{
+      padding: 100px 40px;
+      
+    }
+  }
+
+  @media (max-width:540px){
+
+    .grid-container {
+      max-height: 180vh;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6,1fr);
+      gap: 10px;
+
+    }
+    .grid-container img{
+      box-shadow: 2px 2px 8px rgba(40, 40, 40, 0.342),-2px 2px 8px  rgba(40, 40, 40, 0.342);
+    }
+    
+
+ }
