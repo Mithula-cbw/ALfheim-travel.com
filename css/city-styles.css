@@ -250,6 +250,26 @@ header{
   }
 
   @media (max-width:720px){
+    
+    .hero{
+      margin-top: 100px;
+      background-position: center; 
+      color: var(--bg-color);
+      height: 360px;
+  
+  }
+
+  
+  .hero h1{
+    top: 45%;
+    left: 12%;
+  }
+
+  .hero p{
+    top: 45%;
+    left: 12%;
+  }
+
     .hero h1{
       font-size: 1.6rem;
     }
