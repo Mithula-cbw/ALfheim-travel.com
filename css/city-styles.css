@@ -1,0 +1,19 @@
+.hero{
+    background-position: center; 
+    color: var(--bg-color);
+}
+
+.hero h1{
+    font-size: 2.5rem;
+  position: relative;
+  top: 40%;
+  left: 14%;
+}
+
+.hero p{
+    letter-spacing: 5px;
+    padding-left: 2px;
+    position: relative;
+    top: 40%;
+    left: 14%;
+  }
