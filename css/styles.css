@@ -5,13 +5,22 @@
     --highlight:#FF791F;
     --acc-color:#003043;
     --main-font:"Noto Sans Sogdian", sans-serif;
-    --sec-font:--font-sec:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+    --sec-font:--font-sec:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --width: 100%;
 }
 
-*{
+*, *::before, *::after {
+   
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    
+    
 }
 
 a{
@@ -28,27 +37,19 @@ ul{
     list-style: none !important;
 }
 
-html{
-    scroll-behavior: smooth;
-}
+
 
 body{
-    width: 100%;
-    min-width: 300px;
+    width: 100vw;
     background-color: var(--sec-bg-color);
     font-family: var(--main-font);
     color: black;
-    min-width: 300px;
+    
 }
 
-.container{
-    margin: auto;
-}
 
 .section{
     margin-bottom: 40px;
-    margin-left: 0;
-    margin-right: 0;
     box-shadow: 0px 8px 24px rgba(124, 124, 124, 0.11);
 }
 
@@ -57,17 +58,18 @@ body{
 }
 
 header{
-    width: 100%;
+    width:100vw;
     height: 100px;
-    position: fixed;
-    top: 0px;
-    left: 0;
+    position: sticky;
+    top: 0;
     background-color: var(--bg-color);
     z-index: 1000;
+    display: flex;
+    justify-content: center;
 }
 
 .head{
-    max-width: 940px;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -107,7 +109,6 @@ header{
     flex-direction: row;
     justify-content: space-between;
     max-height: 100%;
-    max-width: initial;
 }
 
 .nav-li{
@@ -192,7 +193,6 @@ header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2)), url('../img/banner.webp');
     background-size: cover;
     background-position: center; 
-    margin-top: 100px;
 }
 
 #h2-hero{
@@ -236,7 +236,7 @@ header{
 }
 
 .welcome-con{
-    max-width: 940px;
+    max-width: 80%;
     max-height: 100%;
     margin: auto;
     display: flex;
@@ -414,7 +414,7 @@ header{
 }
 
 .con-container{
-    max-width: 740px;
+    max-width: 80%;
     padding-top: 80px;
     padding-bottom: 120px;
     margin: auto;
@@ -453,7 +453,7 @@ header{
 
 
 .feedback-form-container {
-    max-width: 740px;
+    max-width: 80%;
     margin: auto;
     padding: 20px;
     border: 1px solid var(--sec-bg-color);
