@@ -1,4 +1,13 @@
+body{
+  min-width: 300px;
+}
+
+header{
+  position: fixed;
+}
+
 .hero{
+    margin-top: 100px;
     background-position: center; 
     color: var(--bg-color);
 
@@ -203,6 +212,8 @@
     grid-template-columns: repeat(2,1fr);
     padding: 60px 40px;
   }
+
+
 }
 
   @media (max-width:1000px){
@@ -275,6 +286,11 @@
     .grid-container a{
       box-shadow: 2px 2px 8px rgba(71, 71, 71, 0.205),-2px 2px 8px rgba(71, 71, 71, 0.205);
     }
+
+    .city-info-tile p{
+      color:  rgb(65, 65, 65);
+      font-size: 0.8rem;
+    }
     
   }
 
@@ -298,8 +314,13 @@
 
   @media (max-width:540px){
 
+    #city{
+      padding: 100px 20px;
+      
+    }
+
     .grid-container {
-      max-height: 180vh;
+      max-height: 140hv;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(6,1fr);
       gap: 10px;
@@ -308,6 +329,42 @@
     .grid-container img{
       box-shadow: 2px 2px 8px rgba(40, 40, 40, 0.342),-2px 2px 8px  rgba(40, 40, 40, 0.342);
     }
+    .hero{
+      margin-top: 80px;
+  
+  }
     
 
  }
+
+ @media (max-width:360px){
+  #city{
+    padding: 100px 20px; 
+  }
+
+  .gllr-title{  
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+    padding-left: 28px;
+    margin-bottom: 20px;
+  }
+
+  .gllr-title span{
+    font-size: 0.5rem;
+    color: rgb(212, 212, 212);
+    letter-spacing: 2px;
+  }
+
+  .info-tile-head{
+    font-size: 0.9rem;
+}
+
+  .city-info-tile p{
+    color:  rgb(65, 65, 65);
+    font-size: 0.73rem;
+  }
+
+ }
+

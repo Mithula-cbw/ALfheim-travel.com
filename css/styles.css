@@ -972,7 +972,29 @@ button[type="submit"]:hover {
 
 }
 
+#nav-logo{
+    width: 20%;
+    min-width: 120px;
+    padding-bottom: 80px;
+    max-height: 80px;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0, 0, 0, 0.144)), rgba(0, 0, 0, 0.764);
+  
+
+}
+
+
+
+#nav-logo div{
+    margin-top: 90px;
+    color: var(--bg-color);
+    font-family:  "Anton", sans-serif;;
+    text-align: center;
+    font-size: 0.9rem;
+    
+}
+
 #h2-hero span:last-of-type::before{
     
     font-size: 1.3rem;
-}}
+}
+}
