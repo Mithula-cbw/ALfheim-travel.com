@@ -156,12 +156,13 @@
   background-color: rgb(244, 244, 244);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.192);
-  padding: 16px; /* Add padding inside the tile */
+  padding: 16px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 10px; /* Adjust margin as per your design */
+  margin-bottom: 10px;
+  box-shadow: -2px 2px 12px rgba(50, 50, 50, 0.277);
 }
 
 .gllr-title span{
