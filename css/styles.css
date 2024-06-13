@@ -692,9 +692,10 @@ button[type="submit"]:hover {
     }
 
     .dest-tile:hover{
-        height: 360px;
+        height: 270px;
         width: 100%;
         color: var(--bg-color);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.182);
     }
 
 }
@@ -860,9 +861,10 @@ button[type="submit"]:hover {
 }
 
 .dest-tile:hover{
-    height: 360px;
+    height: 240px;
     width: 100%;
     color: var(--bg-color);
+    box-shadow: 8px 0  12px rgba(0, 0, 0, 0.305);
 }
 
 

@@ -73,6 +73,15 @@
   
 }
 
+.city-info-tile p a{
+  color: rgb(33, 33, 33);
+}
+
+.city-info-tile p a:hover{
+ color: var(--highlight);
+}
+
+
 #city{
   width: 100%;
   height: max-content;
@@ -137,8 +146,8 @@
   color: rgba(255, 255, 255, 0.575);
 }
 
-.city-gllr a:hover{
-  color: var(--highlight);
+.city-gllr a svg:hover{
+  color: var(--bg-color);
 }
 
 .fact-container {
@@ -181,6 +190,7 @@
   text-align: right;
   padding-left: 10px;
   color: rgb(128, 127, 127);
+  word-spacing: 2px;
 }
 
 
