@@ -316,6 +316,13 @@ header{
     word-spacing: 0.7px;
 }
 
+.fa-external-link{
+    font-size: 0.9rem;
+    margin-left: 5px;
+    padding-bottom: 8px;
+    color: rgba(255, 255, 255, 0.414);
+}
+
 
 
 .Paris{
@@ -339,6 +346,10 @@ header{
 .dest-tile:hover{
     width: 90%;
     color: var(--bg-color);
+}
+
+.dest-tile:hover .fa-external-link{
+    color: rgba(255, 255, 255, 0.918);
 }
 
 .about{
