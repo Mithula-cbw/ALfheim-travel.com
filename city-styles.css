@@ -1,0 +1,390 @@
+body{
+  min-width: 300px;
+}
+
+header{
+  position: fixed;
+}
+
+.hero{
+    margin-top: 100px;
+    background-position: center; 
+    color: var(--bg-color);
+
+}
+
+
+.hero h1{
+    font-size: 2.5rem;
+  position: relative;
+  top: 40%;
+  left: 12%;
+}
+
+.hero p{
+    letter-spacing: 5px;
+    padding-left: 2px;
+    position: relative;
+    top: 40%;
+    left: 12%;
+  }
+
+.city-info{
+  width: 100%;
+  height: max-content;
+  background-color: var(--bg-color);
+  padding: 60px 80px;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.city-info-tile{
+  padding: 20px;
+  background-color: var(--tile-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.192);
+}
+
+.info-tile-head{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color:  rgb(80, 80, 80);
+  margin-bottom: 20px;
+}
+
+.info-buble{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(135, 133, 133, 0.288);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+.info-buble svg{
+  width: 18px;
+  height: 18px;
+}
+
+.city-info-tile p{
+  color:  rgb(115, 114, 114);
+  font-size: 0.9rem;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 1px  rgba(135, 133, 133, 0.288) solid ;
+  
+}
+
+.city-info-tile p a{
+  color: rgb(33, 33, 33);
+}
+
+.city-info-tile p a:hover{
+ color: var(--highlight);
+}
+
+
+#city{
+  width: 100%;
+  height: max-content;
+  background-color: rgb(104, 103, 103);
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.city{
+  width: 40%;
+  height: 100%;
+}
+
+.city-gllr{
+  width: 60%;
+  height: auto; 
+}
+
+.gllr-title{
+ 
+  color: var(--bg-color);
+  letter-spacing: 0.4px;
+  word-spacing: 2px;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+
+
+.grid-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 10px;
+}
+
+.city-gllr img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  
+}
+
+.city-gllr a{
+  width: 100%;
+  height: 100%;
+  background-color: var(--tile-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.city-gllr a svg{
+  width: 40px;
+  height: 30px;
+  color: rgba(255, 255, 255, 0.575);
+}
+
+.city-gllr a svg:hover{
+  color: var(--bg-color);
+}
+
+.fact-container {
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 4px;
+  overflow: auto; 
+}
+
+.fact-tile {
+  width: 100%;
+  height: auto;
+  background-color: rgb(244, 244, 244);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.192);
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: -2px 2px 12px rgba(50, 50, 50, 0.277);
+}
+
+.gllr-title span{
+  font-size: 0.6rem;
+  color: rgb(212, 212, 212);
+}
+
+.gllr-title span::before{
+  content: "*";
+  color: red;
+  
+}
+
+.fact-tile span{
+  position: relative;
+  text-align: right;
+  padding-left: 10px;
+  color: rgb(128, 127, 127);
+  word-spacing: 2px;
+}
+
+
+@media (max-width:1100px){
+
+  .city-info{
+    max-width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    padding: 60px 40px;
+  }
+
+
+}
+
+  @media (max-width:1000px){
+
+    #city{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 100px 60px;
+    }
+
+    .city{
+      width: 90%;
+      height: 100%;
+      margin-bottom: 20px;
+      
+    }
+    
+    .city-gllr{
+      width: 90%;
+      height: auto; 
+    }
+
+}
+
+  @media (max-width:900px){
+    .hero h1{
+      font-size: 2rem;
+    }
+
+    .hero p{
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width:720px){
+    
+    .hero{
+      margin-top: 100px;
+      background-position: center; 
+      color: var(--bg-color);
+      height: 360px;
+  
+  }
+
+  
+  .hero h1{
+    top: 45%;
+    left: 12%;
+  }
+
+  .hero p{
+    top: 45%;
+    left: 12%;
+  }
+
+    .hero h1{
+      font-size: 1.6rem;
+    }
+
+    .hero p{
+      font-size: 0.7rem;
+      letter-spacing: 4px;
+    }
+
+    .city{
+      width: 100%;
+      height: 100%;
+      margin-bottom: 20px;
+      
+    }
+    
+    .city-gllr{
+      width: 100%;
+      height: auto; 
+    }
+
+    .grid-container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3,1fr);
+      gap: 10px;
+      
+    }
+
+    .grid-container img{
+      box-shadow: 2px 2px 8px rgba(71, 71, 71, 0.075),-2px 2px 8px  rgba(71, 71, 71, 0.075);
+    }
+    .grid-container a{
+      box-shadow: 2px 2px 8px rgba(71, 71, 71, 0.205),-2px 2px 8px rgba(71, 71, 71, 0.205);
+    }
+
+    .city-info-tile p{
+      color:  rgb(65, 65, 65);
+      font-size: 0.8rem;
+    }
+    
+  }
+
+  @media (max-width:680px){
+    .city-info{
+      max-width: 100%;
+      grid-template-columns: repeat(1,1fr);
+      gap: 20px;
+    }
+
+    .city-info{
+      padding: 60px 40px;
+      
+    }
+
+    #city{
+      padding: 100px 40px;
+      
+    }
+  }
+
+  @media (max-width:540px){
+
+    #city{
+      padding: 100px 20px;
+      
+    }
+
+    .grid-container {
+      max-height: 140hv;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6,1fr);
+      gap: 10px;
+
+    }
+    .grid-container img{
+      box-shadow: 2px 2px 8px rgba(40, 40, 40, 0.342),-2px 2px 8px  rgba(40, 40, 40, 0.342);
+    }
+    .hero{
+      margin-top: 80px;
+  
+  }
+    
+
+ }
+
+ @media (max-width:360px){
+  #city{
+    padding: 100px 20px; 
+  }
+
+  .gllr-title{  
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    font-size: 1.4rem;
+    letter-spacing: 5px;
+    padding-left: 28px;
+    margin-bottom: 20px;
+  }
+
+  .gllr-title span{
+    font-size: 0.5rem;
+    color: rgb(212, 212, 212);
+    letter-spacing: 2px;
+  }
+
+  .info-tile-head{
+    font-size: 0.9rem;
+}
+
+  .city-info-tile p{
+    color:  rgb(65, 65, 65);
+    font-size: 0.73rem;
+  }
+
+ }
+

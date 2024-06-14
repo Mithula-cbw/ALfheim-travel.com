@@ -198,20 +198,14 @@ header{
     background-position: center; 
 }
 
-.hero div{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items:center;
-    padding-left: 36%;
-    
-    
-}
-
 #h2-hero{
     color: var(--bg-color);
     display: flex;
+    position: relative;
+    top: 120px;
+    left: 35%;
+    width: 40%;
+    height: 100%;
     font-size: 2.5rem;
     flex-direction: column;
     margin: auto;
@@ -617,11 +611,6 @@ button[type="submit"]:hover {
 
 @media (max-width:900px){
   
-
-    #h2-hero{
-        font-size: 2rem;
-        
-    }
     .nav-link{
         font-size: 0.9rem;
         letter-spacing: 0.1px;
@@ -842,17 +831,29 @@ button[type="submit"]:hover {
 }
 
 .hero{
-    background-image: url('img/banner2.jpg');
-    object-position: bottom;
-    object-fit: cover;
+    width: 100%;
+    height:260px;
+    
+
 }
 
+#h2-hero{
+    display: flex;
+    position: relative;
+    top: 80px;
+    left: 35%;
+    width: 40%;
+    height: 100%;
+    font-size: 2rem;
+    color: var(--bg-color);
+    padding-right: 40px;
 
+}
 
 #h2-hero span:last-of-type::before{
-    color: var(--highlight);
-    font-size: 1.4rem;
-    padding-right: 2px;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding-right: 0px;
 }
 .sec-title{
     font-size: 1.2rem;
@@ -977,8 +978,7 @@ button[type="submit"]:hover {
  }
 
  .hero{
-    height: 360px;
-    object-position: right;
+    height: 240px;
  }
 
  #h2-hero{
