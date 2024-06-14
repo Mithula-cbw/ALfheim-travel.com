@@ -83,7 +83,7 @@ header{
 }
 
 .city-info-tile p a{
-  color: rgb(33, 33, 33);
+  color: rgb(0, 0, 0);
 }
 
 .city-info-tile p a:hover{
@@ -308,8 +308,12 @@ header{
     }
 
     .city-info-tile p{
-      color:  rgb(65, 65, 65);
+      color:  rgb(60, 60, 60);
       font-size: 0.8rem;
+    }
+    .city-info-tile p a{
+      color: rgba(22, 22, 22, 0.757);
+      font-weight: bold;
     }
     
   }
@@ -382,9 +386,11 @@ header{
 }
 
   .city-info-tile p{
-    color:  rgb(65, 65, 65);
+    color:  rgb(60, 60, 60);
     font-size: 0.73rem;
   }
+
+ 
 
  }
 
