@@ -193,19 +193,25 @@ header{
 .hero{
     width: 100%;
     height:360px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2)), url('../img/banner.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) , rgba(0, 0, 0, 0.2)), url('img/banner.webp');
     background-size: cover;
     background-position: center; 
+}
+
+.hero div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items:center;
+    padding-left: 36%;
+    
+    
 }
 
 #h2-hero{
     color: var(--bg-color);
     display: flex;
-    position: relative;
-    top: 120px;
-    left: 35%;
-    width: 40%;
-    height: 100%;
     font-size: 2.5rem;
     flex-direction: column;
     margin: auto;
@@ -326,19 +332,19 @@ header{
 
 
 .Paris{
-    background-image:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.8) 90%), url(../img/Paris.webp);
+    background-image:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.8) 90%), url(img/Paris.webp);
     background-position: top;
     background-size: cover;
 }
 
 .New-york{
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%),url(../img/NY.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8) 90%),url(img/NY.webp);
     background-position: top;
     background-size: cover;
 }
 
 .Tokyo{
-    background-image:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.9) 90%), url(../img/Tokyo.webp);
+    background-image:linear-gradient(rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.9) 90%), url(img/Tokyo.webp);
     background-position: top;
     background-size: cover;
 }
@@ -403,7 +409,7 @@ header{
 }
 
 .about-2 {
-    background-image: url(../img/about.webp);
+    background-image: url(img/about.webp);
     background-position: center; 
     background-size: cover;
      background-repeat: no-repeat;  
@@ -611,6 +617,11 @@ button[type="submit"]:hover {
 
 @media (max-width:900px){
   
+
+    #h2-hero{
+        font-size: 2rem;
+        
+    }
     .nav-link{
         font-size: 0.9rem;
         letter-spacing: 0.1px;
@@ -831,29 +842,17 @@ button[type="submit"]:hover {
 }
 
 .hero{
-    width: 100%;
-    height:260px;
-    
-
+    background-image: url('img/banner2.jpg');
+    object-position: bottom;
+    object-fit: cover;
 }
 
-#h2-hero{
-    display: flex;
-    position: relative;
-    top: 80px;
-    left: 35%;
-    width: 40%;
-    height: 100%;
-    font-size: 2rem;
-    color: var(--bg-color);
-    padding-right: 40px;
 
-}
 
 #h2-hero span:last-of-type::before{
-    color: var(--text-color);
-    font-size: 1.5rem;
-    padding-right: 0px;
+    color: var(--highlight);
+    font-size: 1.4rem;
+    padding-right: 2px;
 }
 .sec-title{
     font-size: 1.2rem;
@@ -978,7 +977,8 @@ button[type="submit"]:hover {
  }
 
  .hero{
-    height: 240px;
+    height: 360px;
+    object-position: right;
  }
 
  #h2-hero{
